@@ -40,7 +40,7 @@ print('Special Characters: ' + str(hasSymbol))
 print(' ')
 # Numbers Only Conditions
 if (len(a) >= 3 and len(a) <= 8):
-    if (a.isdigit() == True):
+    if (hasNumber == True):
         PasswordStrength = 'Instantly'
 elif(len(a) >= 9 and len(a) <= 18):
     if (a.isdigit() == True):
@@ -68,7 +68,7 @@ elif(len(a) >= 9 and len(a) <= 18):
             PasswordStrength = 'password way too long'
 # UPPERCASE AND LOWERCASE CHECK
 if (len(a) >= 3 and len(a) <= 7):
-    if (a.islower() == True or a.isupper() == True):
+    if (hasLower == True or hasUpper == True):
         PasswordStrength = 'Instantlyy'
 elif (len(a) >= 8 and len(a) <= 18):
     if (a.islower() == True or a.isupper() == True):
@@ -97,7 +97,7 @@ elif (len(a) >= 8 and len(a) <= 18):
         else:
             PasswordStrength = 'password way too long'
 # Mixed Upper and Lower
-if (hasLower == True or hasUpper == True):
+if (hasLower == True and hasUpper == True):
     if (len(a) >= 3 and len(a) <= 5):
         PasswordStrength = "Instantlyyy"
     elif(len(a) >= 6 and len(a) <= 18):
@@ -130,7 +130,7 @@ if (hasLower == True or hasUpper == True):
         else:
             PasswordStrength = 'password way too long'
 # Mixed Lower, Upper and Numbers
-if (hasLower == True or hasUpper == True or hasNumber == True):
+if (hasLower == True and hasUpper == True and hasNumber == True):
         if (len(a) >= 3 and len(a) <= 4):
             PasswordStrength = "Instantlyyyy"
         elif (len(a)>= 5 and len(a) <= 18):
@@ -164,7 +164,7 @@ if (hasLower == True or hasUpper == True or hasNumber == True):
                 PasswordStrength = "23QD years"
             else:
                 PasswordStrength = 'password way too long'
-if (hasLower == True or hasUpper == True or hasNumber == True or hasSymbol == True):
+if (hasLower == True and hasUpper == True and hasNumber == True and hasSymbol == True):
         if (len(a) >= 3 and len(a) <= 4):
             PasswordStrength = "Instantlyyyy"
         elif (len(a)>= 5 and len(a) <= 18):
